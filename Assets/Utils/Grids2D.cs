@@ -6,7 +6,7 @@ namespace Utils
     {
         public static float GetGridPos(float currentAxisPos, int gridSize, int offset)
         {
-            float newAxisPos = (Mathf.Floor(currentAxisPos / gridSize) * gridSize) + 5;
+            float newAxisPos = (Mathf.Floor(currentAxisPos / gridSize) * gridSize) + offset;
             return newAxisPos;
         }
 

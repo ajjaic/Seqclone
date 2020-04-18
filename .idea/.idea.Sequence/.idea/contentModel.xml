@@ -7,8 +7,20 @@
     <e p="C:\Users\AJ\Documents\unity\Sequence" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Token.cs" t="Include" />
+        <e p="_Game" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="EditorScripts" t="Include">
+              <e p="EditModeTokenGridPlacement.cs" t="Include" />
+            </e>
+            <e p="GameController.cs" t="Include" />
+            <e p="GameSignals.cs" t="Include" />
+            <e p="ScriptableObjects" t="Include">
+              <e p="GameSettings.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Utils" t="Include">
+          <e p="Event.cs" t="Include" />
           <e p="Grids2D.cs" t="Include" />
         </e>
       </e>
