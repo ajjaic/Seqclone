@@ -19,6 +19,7 @@
             </e>
           </e>
         </e>
+        <e p="TokenSelectAndPlaceOnBoard.cs" t="Include" />
         <e p="Utils" t="Include">
           <e p="Event.cs" t="Include" />
           <e p="Grids2D.cs" t="Include" />
