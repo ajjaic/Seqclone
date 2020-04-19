@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1024398459165765445, guid: 9fe3946517644d846b9eb703758981a4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3514533148064827402, guid: 9fe3946517644d846b9eb703758981a4,
         type: 3}
       propertyPath: m_Name
@@ -136,7 +141,7 @@ PrefabInstance:
     - target: {fileID: 3514533148064827409, guid: 9fe3946517644d846b9eb703758981a4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.5
+      value: 44.9
       objectReference: {fileID: 0}
     - target: {fileID: 3514533148064827409, guid: 9fe3946517644d846b9eb703758981a4,
         type: 3}
@@ -146,7 +151,7 @@ PrefabInstance:
     - target: {fileID: 3514533148064827409, guid: 9fe3946517644d846b9eb703758981a4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 109.1
+      value: -11.5
       objectReference: {fileID: 0}
     - target: {fileID: 3514533148064827409, guid: 9fe3946517644d846b9eb703758981a4,
         type: 3}
@@ -251,7 +256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f4f30d187304f348c384c1a223ab0ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSettings: {fileID: 11400000, guid: 46fadb4ae701ce540a2706dbce5f7f57, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

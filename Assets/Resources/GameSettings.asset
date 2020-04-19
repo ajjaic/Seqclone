@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4976f8ba4275475586c099ab3806de76, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
+  gridEndInUnits: 95
   gridOffset: 5
-  gridPlaneCenter: 50
   gridSize: 10
+  gridStartInUnits: 5
