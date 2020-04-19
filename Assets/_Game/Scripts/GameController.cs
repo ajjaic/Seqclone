@@ -5,10 +5,14 @@ namespace Sequence
 {
     public class GameController : MonoBehaviour
     {
-        // TODO: Load this from disk
-        [SerializeField] private GameSettings gameSettings;
+        private GameSettings _gameSettings;
 
         // messages
+        private void Awake()
+        {
+            _gameSettings = Resources.Load<GameSettings>("GameSettings");
+        }
+
         private void OnEnable()
         {
             GameSignals.REQUIRE_GAME_SETTINGS_EVENT.EventInstance += OnRequireGameSettings;
@@ -21,7 +25,7 @@ namespace Sequence
         
         private void OnRequireGameSettings(IGameSettingsReceiver receiver)
         {
-            receiver.OnGameSettingsReceived(gameSettings);
+            receiver.OnGameSettingsReceived(_gameSettings);
         }
     }
 }
