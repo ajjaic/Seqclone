@@ -13,7 +13,7 @@ public class GameSettings : ScriptableObject
 
     public int GetAxisMin()
     {
-        return gridOffset;
+        return gridOffset; // TODO: This is wrong. This needs to be worked out on paper
     }
 
     public int GetAxisMax()

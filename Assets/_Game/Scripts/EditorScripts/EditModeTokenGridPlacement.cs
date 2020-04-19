@@ -11,16 +11,16 @@ namespace Sequence.Tokens
         private void Update()
         {
             var currentPos = transform.position;
+            var pointToConvertToSnapPoint = new Vector2(currentPos.x, currentPos.z);
+
+            var snapPoint = UtilityMethods.Floored2DGridPointClamp(pointToConvertToSnapPoint, 
+                gameSettings.gridSize, 
+                gameSettings.gridOffset, 
+                gameSettings.GetAxisMin(), 
+                gameSettings.GetAxisMax());
             
-            float xPos = Grids2DSquare.GetGridPosClamp(
-                currentPos.x, gameSettings.gridSize, 
-                gameSettings.gridOffset, gameSettings.GetAxisMin(), gameSettings.GetAxisMax());
-            
-            float zPos = Grids2DSquare.GetGridPosClamp(
-                currentPos.z, gameSettings.gridSize, 
-                gameSettings.gridOffset, gameSettings.GetAxisMin(), gameSettings.GetAxisMax());
-            
-            transform.position = new Vector3(xPos, currentPos.y, zPos);
+            transform.position = new Vector3(snapPoint.x, currentPos.y, snapPoint.y);
+
         }
     }
 }
