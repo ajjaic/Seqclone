@@ -20,8 +20,8 @@ namespace Sequence.Tokens
         // messages
         private void Start()
         {
-            _layerToPlaceToken = LayerMask.GetMask("SequenceBoard");
-            GameSignals.REQUIRE_GAME_SETTINGS_EVENT.TriggerEvent(this);
+            _layerToPlaceToken = LayerMask.GetMask("SequenceBoard"); // Set the board's layer.
+            GameSignals.REQUIRE_GAME_SETTINGS_EVENT.TriggerEvent(this); // Tell the game controller that you need the game settings
         }
 
         private void OnMouseDrag()
@@ -34,8 +34,10 @@ namespace Sequence.Tokens
         {
             Debug.Assert(Camera.main != null, "Camera.main != null");
 
-            // if the cursor is on top of the board, make is so token is only a certain height above board.
-            // otherwise, let token be rendered at point of cursor; certain units away from camera.
+            /*
+             * If the cursor is on top of the board, make it is so token is only a certain height above board. Otherwise, let token be
+             * rendered at point of cursor; certain units away from camera.
+             */
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out var hit, Mathf.Infinity, _layerToPlaceToken))
             {
@@ -44,10 +46,10 @@ namespace Sequence.Tokens
                 var snapPoint = UtilityMethods.Floored2DGridPointClamp(pointToConvertToSnapPoint,
                     _gameSettings.gridSize,
                     _gameSettings.gridOffset,
-                    _gameSettings.GetAxisMin(),
-                    _gameSettings.GetAxisMax()
+                    _gameSettings.gridStartInUnits,
+                    _gameSettings.gridEndInUnits
                 );
-                
+
                 transform.position = new Vector3(snapPoint.x, HeightAboveBoard, snapPoint.y);
             }
             else

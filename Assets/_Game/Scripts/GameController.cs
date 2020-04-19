@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Sequence
 {
@@ -17,12 +16,12 @@ namespace Sequence
         {
             GameSignals.REQUIRE_GAME_SETTINGS_EVENT.EventInstance += OnRequireGameSettings;
         }
-        
+
         private void OnDisable()
         {
             GameSignals.REQUIRE_GAME_SETTINGS_EVENT.EventInstance -= OnRequireGameSettings;
         }
-        
+
         private void OnRequireGameSettings(IGameSettingsReceiver receiver)
         {
             receiver.OnGameSettingsReceived(_gameSettings);

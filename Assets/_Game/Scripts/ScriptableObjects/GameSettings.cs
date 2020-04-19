@@ -3,21 +3,12 @@
 [CreateAssetMenu(fileName = "GameSettings", menuName = "GameSettings", order = 0)]
 public class GameSettings : ScriptableObject
 {
+    public int gridEndInUnits = 95;
+
     [Tooltip("Offset within each grid in both X and Y axis")]
     public int gridOffset = 5;
 
-    [Tooltip("Midpoint of board in X and Y axis")]
-    public int gridPlaneCenter = 50;
+    [Tooltip("How many cells on a side?")] public int gridSize = 10;
 
-    public int gridSize = 10;
-
-    public int GetAxisMin()
-    {
-        return gridOffset; // TODO: This is wrong. This needs to be worked out on paper
-    }
-
-    public int GetAxisMax()
-    {
-        return gridPlaneCenter * 2 - gridOffset;
-    }
+    public int gridStartInUnits = 5;
 }

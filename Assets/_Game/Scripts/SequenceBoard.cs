@@ -1,15 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Sequence.Board 
+namespace Sequence.Board
 {
     public class SequenceBoard : MonoBehaviour
     {
-        void Start()
+        private void Start()
         {
             gameObject.layer = LayerMask.NameToLayer("SequenceBoard");
         }
     }
-
 }
