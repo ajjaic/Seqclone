@@ -23,6 +23,7 @@ namespace Sequence.Player
         {
             if (Input.GetButtonDown("Zoom"))
             {
+                Cursor.visible = false;
                 var ray = _mainCam.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out var hit))
                 {
@@ -36,6 +37,7 @@ namespace Sequence.Player
 
             if (Input.GetButtonUp("Zoom"))
             {
+                Cursor.visible = true;
                 _mainCam.enabled = true;
                 _playerZoomCam.enabled = false;
                 _followMouse = false;

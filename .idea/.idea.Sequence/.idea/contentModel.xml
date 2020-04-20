@@ -25,6 +25,7 @@
             <e p="TokenSelectAndPlaceOnBoard.cs" t="Include" />
           </e>
         </e>
+        <e p="PickAndPlace.cs" t="Include" />
         <e p="Utils" t="Include">
           <e p="Event.cs" t="Include" />
           <e p="UtilityMethods.cs" t="Include" />
