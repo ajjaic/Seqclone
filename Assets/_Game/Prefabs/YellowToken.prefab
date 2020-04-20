@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 440190113852275694}
   - component: {fileID: 440190113852275695}
   - component: {fileID: 440190113852275688}
-  - component: {fileID: 8227396280844455823}
+  - component: {fileID: -6193633130910005258}
   m_Layer: 0
   m_Name: YellowToken
   m_TagString: Untagged
@@ -94,16 +94,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &8227396280844455823
+--- !u!114 &-6193633130910005258
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440190113852275689}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a69edc2264294d96bdffe1c85fdc269d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bdb4957f707ca847b78d76408d7e945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSettings: {fileID: 11400000, guid: 46fadb4ae701ce540a2706dbce5f7f57, type: 2}

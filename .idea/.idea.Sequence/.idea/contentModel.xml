@@ -9,6 +9,7 @@
       <e p="Assets" t="Include">
         <e p="_Game" t="Include">
           <e p="Scripts" t="Include">
+            <e p="CameraZoomController.cs" t="Include" />
             <e p="EditorScripts" t="Include">
               <e p="EditModeTokenGridPlacement.cs" t="Include" />
             </e>
