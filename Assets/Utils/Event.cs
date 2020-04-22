@@ -10,5 +10,15 @@
         {
             EventInstance?.Invoke(sender);
         }
+
+        public void Subscribe(EventType f)
+        {
+            EventInstance += f;
+        }
+
+        public void Unsubscribe(EventType f)
+        {
+            EventInstance -= f;
+        }
     }
 }

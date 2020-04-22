@@ -9,26 +9,40 @@
       <e p="Assets" t="Include">
         <e p="_Game" t="Include">
           <e p="Scripts" t="Include">
-            <e p="CameraZoomController.cs" t="Include" />
-            <e p="EditorScripts" t="Include">
-              <e p="EditModeTokenGridPlacement.cs" t="Include" />
+            <e p="Behaviors" t="Include">
+              <e p="CameraZoomController.cs" t="Include" />
+              <e p="CardDealer.cs" t="Include" />
+              <e p="CardHandController.cs" t="Include" />
+              <e p="GameController.cs" t="Include" />
+              <e p="GameSignals.cs" t="Include" />
+              <e p="PickAndPlace.cs" t="Include" />
             </e>
-            <e p="GameController.cs" t="Include" />
-            <e p="GameSignals.cs" t="Include" />
             <e p="Interfaces" t="Include">
-              <e p="IGameSettingsReceiver.cs" t="Include" />
+              <e p="IGameControllerReceiver.cs" t="Include" />
             </e>
             <e p="ScriptableObjects" t="Include">
-              <e p="GameSettings.cs" t="Include" />
+              <e p="CardSuitNRankToPrefab.cs" t="Include" />
             </e>
-            <e p="SequenceBoard.cs" t="Include" />
-            <e p="TokenSelectAndPlaceOnBoard.cs" t="Include" />
           </e>
         </e>
-        <e p="PickAndPlace.cs" t="Include" />
         <e p="Utils" t="Include">
           <e p="Event.cs" t="Include" />
           <e p="UtilityMethods.cs" t="Include" />
+        </e>
+        <e p="Xyaneon.Games.Cards" t="Include">
+          <e p="Card.cs" t="Include" />
+          <e p="DefaultShuffleAlgorithm.cs" t="Include" />
+          <e p="DrawPile.cs" t="Include" />
+          <e p="IDrawPile.cs" t="Include" />
+          <e p="IShuffleAlgorithm.cs" t="Include" />
+          <e p="StandardPlayingCards" t="Include">
+            <e p="Joker.cs" t="Include" />
+            <e p="Rank.cs" t="Include" />
+            <e p="StandardPlayingCard.cs" t="Include" />
+            <e p="StandardPlayingCardDeck.cs" t="Include" />
+            <e p="Suit.cs" t="Include" />
+          </e>
+          <e p="Xyaneon.Games.Cards.xml" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
