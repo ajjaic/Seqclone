@@ -35,6 +35,7 @@ namespace Sequence.Player
         
         private void CreateCardsInHand(IEnumerable<StandardPlayingCard> cardsInHand)
         {
+            // Create all the cards in the players hand
             foreach (StandardPlayingCard card in cardsInHand)
             {
                 CardController instantiatedCard = CreateCard(card);

@@ -50,6 +50,7 @@ namespace Sequence
             }
         }
 
+        // Call this when the game starts
         private void OnStartGame(object sender)
         {
             // Choose the player that will be dealer for this round. Dealer plays last.

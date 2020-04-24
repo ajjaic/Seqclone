@@ -32,6 +32,7 @@
         </e>
         <e p="Utils" t="Include">
           <e p="Event.cs" t="Include" />
+          <e p="GameSignalTemplate.cs" t="Include" />
           <e p="UtilityMethods.cs" t="Include" />
         </e>
         <e p="Xyaneon.Games.Cards" t="Include">
