@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1199522970125033398}
   - component: {fileID: 1199522970122133398}
   - component: {fileID: 1199522970123132246}
+  - component: {fileID: -2324620391681608203}
+  - component: {fileID: -6369943416270644711}
   m_Layer: 0
   m_Name: PlayingCards_KDiamond
   m_TagString: Untagged
@@ -79,3 +81,28 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &-2324620391681608203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199522970125386646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d5e801f51cb9a46b430031cedf2183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &-6369943416270644711
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199522970125386646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.063501544, y: 0.08890009, z: 0.000049929455}
+  m_Center: {x: 0.00000017136335, y: -0.000000007450581, z: -0.000000011392331}

@@ -23,7 +23,6 @@ namespace Sequence.Player
                 var ray = _mainCam.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out var hit, Mathf.Infinity, LayerMask.GetMask("SequenceBoard")))
                 {
-                    print(hit.collider.name);
                     var zoomTransform = _playerZoomCam.transform;
                     zoomTransform.position = new Vector3(hit.point.x, zoomTransform.position.y, hit.point.z);
                     _mainCam.enabled = false;

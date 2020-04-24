@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7685074075018196420}
+  - component: {fileID: -2228742211266666152}
   - component: {fileID: 7685074075021063652}
   - component: {fileID: 7685074075019966244}
+  - component: {fileID: 3285083924847667649}
   m_Layer: 0
   m_Name: PlayingCards_9Spades
   m_TagString: Untagged
@@ -32,6 +34,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &-2228742211266666152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7685074075017964004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d5e801f51cb9a46b430031cedf2183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &7685074075021063652
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -79,3 +93,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3285083924847667649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7685074075017964004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.063502766, y: 0.08890019, z: 0.000049929455}
+  m_Center: {x: -0.00000013411045, y: 0.0000000018626451, z: -0.000000011392331}

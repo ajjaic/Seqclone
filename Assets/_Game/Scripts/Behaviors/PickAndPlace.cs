@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Sequence.Tokens
 {
@@ -6,17 +7,24 @@ namespace Sequence.Tokens
     {
         private Transform _boardPosColliderTransform;
 
-        private void OnMouseDrag()
+        private void Update()
         {
-            Cursor.visible = false;
+            
             var newPos = new Vector3(Input.GetAxis("Mouse X") * Time.deltaTime * 50f, 0f, Input.GetAxis("Mouse Y") * Time.deltaTime * 50f);
             transform.position += newPos;
         }
 
-        private void OnMouseUp()
+        public void OnMouseDown()
+        {
+            Cursor.visible = false;
+            enabled = true;
+        }
+
+        public void OnMouseUp()
         {
             Cursor.visible = true;
             if (_boardPosColliderTransform) transform.position = _boardPosColliderTransform.position;
+            enabled = false;
         }
 
         private void OnTriggerEnter(Collider other)

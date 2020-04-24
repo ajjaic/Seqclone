@@ -11,11 +11,16 @@
           <e p="Scripts" t="Include">
             <e p="Behaviors" t="Include">
               <e p="CameraZoomController.cs" t="Include" />
+              <e p="CardController.cs" t="Include" />
               <e p="CardDealer.cs" t="Include" />
               <e p="CardHandController.cs" t="Include" />
               <e p="GameController.cs" t="Include" />
               <e p="GameSignals.cs" t="Include" />
               <e p="PickAndPlace.cs" t="Include" />
+              <e p="PlayedCardController.cs" t="Include" />
+              <e p="PlayerSwitcher.cs" t="Include" />
+              <e p="SelfHider.cs" t="Include" />
+              <e p="TokenCreator.cs" t="Include" />
             </e>
             <e p="Interfaces" t="Include">
               <e p="IGameControllerReceiver.cs" t="Include" />

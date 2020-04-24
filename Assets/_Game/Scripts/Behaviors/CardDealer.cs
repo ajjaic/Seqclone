@@ -7,25 +7,23 @@ namespace Sequence.Player
     {
         private StandardPlayingCardDeck _deck;
         private GameController _gameController;
-        private CardHandController[] _players;
 
-        // API
+        // messages
+        private void Start() => GameSignals.REQUIRE_GAME_CONTROLLER.TriggerEvent(this);
+
+        // public messages
         public void OnGameControllerReceived(GameController gameController)
         {
             _gameController = gameController;
         }
-
-        // methods
-        private void Start()
-        {
-            GameSignals.REQUIRE_GAME_CONTROLLER.TriggerEvent(this);
-            _deck = new StandardPlayingCardDeck();
-            _deck.Shuffle();
-        }
-
+        
         public void DealCards()
         {
-            var numberOfCardsPerPlayer = _gameController.playersToCardCount[_gameController.PlayerCount];
+            var numberOfCardsPerPlayer = _gameController.PlayersToCardCount[_gameController.PlayerCount]; // How many cards should we give each player? Depends on number of players in the game
+            _deck = new StandardPlayingCardDeck(); // Create a new deck and shuffle.
+            _deck.Shuffle();
+            
+            // Deal the right number of cards to each player
             foreach (var player in _gameController.Players)
             {
                 var playerHand = _deck.Draw(numberOfCardsPerPlayer);
